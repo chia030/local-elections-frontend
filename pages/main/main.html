@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="pages\main\main.css">
+    <title>Local Elections</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu header">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img src="logos/vote-logo.png" id="logo" alt="logo">
+                    </a>
+                </li>
+                <li><a href="/candidates" data-navigo>Candidates</a></li>
+                <li><a href="/parties" data-navigo>Parties</a></li>
+                <li><a href="/votes" data-navigo>Votes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="central-content">
+
+        <h1>Local Elections 2021</h1>
+
+        <p> Once again, it's time for local elections! 
+            You'll be able to manage the election candidates, 
+            the parties and the votes from the homepage and view the info from the other sections. </p>
+
+        <h2>Manage Candidates</h2>
+        <p>You can add, edit or delete candidates. Please select which action you'd like to perform.</p>
+
+        <form class="candidates-action-form action-form">
+            <select class="action-selector">
+                <option value="add">Add</option>
+                <option value="edit">Edit</option>
+                <option value="delete">Delete</option>
+            </select>
+        </form>
+        <div class="candidates-action-body action-body"></div>
+
+        <h2>Manage Votes</h2>
+        <h3>Add Vote</h3>
+        <p>You can either vote for an individual candidate or a party.</p>
+
+        <div class="votes-action-body action-body add">
+            <form class="add-vote-form">
+                <label>Candidate</label>
+                <select name="candidates" class="candidate-selector">
+                    <option selected="selected" value="">None Selected</option>
+                </select>
+                <label>Party</label>
+                <select name="parties" class="party-selector">
+                    <option selected="selected" value="">None Selected</option>
+                </select>
+                <input type="submit" value="Add Vote">
+            </form>
+            <h5 class="vote-success"></h5>
+        </div>
+        
+    </div>
+
+    <footer>
+        <nav class="nav-menu footer">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/candidates" data-navigo>Candidates</a></li>
+                <li><a href="/parties" data-navigo>Parties</a></li>
+                <li><a href="/votes" data-navigo>Votes</a></li>
+            </ul>    
+        </nav>
+    </footer>
+</body>
+

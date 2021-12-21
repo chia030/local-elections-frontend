@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="pages\main\main.css">
+    <title>Candidates</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-menu header">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img src="logos/vote-logo.png" id="logo" alt="logo">
+                    </a>
+                </li>
+                <li><a href="/#/candidates">Candidates</a></li>
+                <li><a href="/#/parties">Parties</a></li>
+                <li><a href="/#/votes">Votes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="central-content">
+
+        <h2>Election Candidates</h2>
+        <p>You can filter the candidate by the party they are affiliated with.</p>
+
+        <form class="candidate-party-form">
+            <label>Select a party</label>
+            <select name="party" id="party-selector">
+                <option selected="selected" value="0">All Parties</option>
+            </select>
+        </form>
+
+        <div class="candidates-output"></div>
+
+    </div>
+
+    <footer>
+        <nav class="nav-menu footer">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#/candidates">Candidates</a></li>
+                <li><a href="/#/parties">Parties</a></li>
+                <li><a href="/#/votes">Votes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>

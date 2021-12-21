@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="pages\main\main.css">
+    <title>Votes</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-menu header">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img src="logos/vote-logo.png" id="logo" alt="logo">
+                    </a>
+                </li>
+                <li><a href="/#/candidates">Candidates</a></li>
+                <li><a href="/#/parties">Parties</a></li>
+                <li><a href="/#/votes">Votes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="central-content">
+
+        <h2>Election Results</h2>
+
+        <p>You can filter the votes by the party they are affiliated with.</p>
+
+        <form class="votes-form">
+            <label>Select a candidate:</label>
+            <select name="candidate" class="candidate-selector">
+                <option selected="selected" value="">None Selected</option>
+            </select>
+            <label> or select a party:</label>
+            <select name="party" class="party-selector">
+                <option selected="selected" value="">None Selected</option>
+            </select>
+            <br>
+            <label>Show all votes for the party (including the ones for candidates of that party)</label>
+            <input type="checkbox" class="total-party">
+            <input type="submit" value="Filter">
+        </form>
+
+        <h3>Votes</h3>
+        <div class="votes-output"></div>
+
+    </div>
+
+    <footer>
+        <nav class="nav-menu footer">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#/candidates">Candidates</a></li>
+                <li><a href="/#/parties">Parties</a></li>
+                <li><a href="/#/votes">Votes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
